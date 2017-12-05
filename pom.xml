@@ -191,20 +191,14 @@
                     </execution>
                 </executions>
             </plugin>
+            <!--  
             <plugin>
-                <!--
-                Updates Version#id().
-                -->
+              
                 <groupId>com.google.code.maven-replacer-plugin</groupId>
                 <artifactId>replacer</artifactId>
                 <version>1.5.3</version>
                 <executions>
-                    <execution>
-                        <phase>process-sources</phase>
-                        <goals>
-                            <goal>replace</goal>
-                        </goals>
-                    </execution>
+
                 </executions>
                 <configuration>
                     <ignoreMissingFile>false</ignoreMissingFile>
@@ -214,7 +208,7 @@
                     <token>@version@</token>
                     <value>${project.version}</value>
                 </configuration>
-            </plugin>
+            </plugin>-->
             <plugin><!-- Using jdk 1.5.0_22, package-info.java files are compiled correctly. -->
                 <!--
                 java compiler plugin forked in extra process
